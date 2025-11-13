@@ -5,7 +5,7 @@ public class Animación : MonoBehaviour
 {
     [Header("Movimiento (flotación)")]
 
-    public float floatAmplitude = 0.5f;  // Distancia máxima que sube/baja
+    public float floatAmplitude = 0.05f;  // Distancia máxima que sube/baja
 
     public float floatSpeed = 2f;        // Velocidad de subida y bajada
  
@@ -35,7 +35,7 @@ public class Animación : MonoBehaviour
  
         // Rotación hacia su derecha (eje X local)
 
-        transform.Rotate(Vector3.right * rotationSpeed * Time.deltaTime, Space.Self);
+        transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime, Space.Self);
 
     }
  
